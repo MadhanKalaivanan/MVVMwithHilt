@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MVVMwithHilt</string>
+
+    <string name="no_record_found">No Record Found</string>
+    <string name="logo">logo</string>
+    <string name="shop">Shop</string>
+    <string name="explore">Explore</string>
+    <string name="cart">Cart</string>
+    <string name="favourite">Favourite</string>
+    <string name="account">Account</string>
+</resources>
