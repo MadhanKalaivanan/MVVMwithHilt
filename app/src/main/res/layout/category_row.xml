@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+            android:id="@+id/category_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/category_img_height"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/category_image" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/category_name_padding"
+        android:paddingBottom="@dimen/category_name_padding"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/category_txt_size"
+        tools:text="Dairy" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sub_list_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/row_margin"
+        android:layout_marginTop="@dimen/row_margin"
+        android:layout_marginEnd="@dimen/row_margin_end">
+
+        <TextView
+            android:id="@+id/category_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/view_all"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/category_title_txt_size"
+            android:textStyle="bold"
+            tools:text="Categories" />
+
+        <TextView
+            android:id="@+id/view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignTop="@id/category_hint"
+            android:layout_alignBottom="@id/category_hint"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/row_margin_end"
+            android:gravity="end|center_vertical"
+            android:text="@string/view_all"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/view_all_txt_size"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sub_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_hint"
+            android:layout_marginTop="@dimen/row_margin_end" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/row_margin"
+        android:contentDescription="@string/banner"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

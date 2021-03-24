@@ -22,8 +22,8 @@ data class DataClass(
 
 data class BannerList(
     val banner_id: Int?,
-    @SerializedName("document")
-    val banner_image: String?
+    @SerializedName("banner_image")
+    val bannerImage: String?
 )
 
 data class CategoryList(

@@ -12,8 +12,7 @@ import kotlinx.coroutines.launch
 
 
 class HomeScreenViewModel @ViewModelInject constructor(
-    private val homeScreenRepository: HomeScreenRepository,
-    @ApplicationContext private val context: Context
+    private val homeScreenRepository: HomeScreenRepository
 ) : BaseViewModel() {
 
     var componentList = MutableLiveData<ArrayList<DataClass>>()
